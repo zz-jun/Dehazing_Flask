@@ -158,9 +158,9 @@ def upload_h():
 
     img_byte_array = io.BytesIO()
 
-    # image.save(img_byte_array, format='JPEG')
+
     image.save(img_byte_array, format="PNG")
-    # image = image.convert('RGB')
+
 
     image_info = base64.b64encode(img_byte_array.getvalue()).decode('ascii')
     return image_info
@@ -297,4 +297,4 @@ def upload():
 if __name__ == '__main__':
     app.jinja_env.auto_reload = True
     app.config['TEMPLATES_AUTO_RELOAD'] = True
-    app.run(debug=False, port=8081)
+    app.run(debug=False, port=6006)
