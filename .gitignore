@@ -3,16 +3,46 @@ bin-debug/
 bin-release/
 [Oo]bj/
 [Bb]in/
-.idea/
 # Other files and folders
-.settings/
 
 # Executables
 *.swf
 *.air
 *.ipa
 *.apk
+*.class
 
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
+
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+#maven
+target/
+dependency-reduced-pom.xml
+pom.xml.versionsBackup
+.factorypath
+
+out/
+
+# Gradel
+.gradle/
+build/
+
+# IDEA
+.idea/
+*.ipr
+*.iml
+*.iws
+
+# temp ignore
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
